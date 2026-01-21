@@ -67,3 +67,10 @@ img {
     max-width: initial;
   }
 }
+
+@media (max-width: 350px) {
+  header img {
+    border: 1px solid #dadada;
+
+  }
+}
