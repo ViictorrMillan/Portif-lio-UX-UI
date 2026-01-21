@@ -41,3 +41,29 @@ img {
   word-break: break-all;
   max-width: 5ch;
 }
+
+@media (max-width: 1170px) {
+  .subtitulo {
+    font-size: 6.5rem;
+}
+}
+
+@media (max-width: 1000px) {
+  .subtitulo {
+    font-size: 6rem;
+}
+}
+@media (max-width: 900px) {
+  .subtitulo {
+    font-size: 5.5rem;
+}
+}
+
+
+@media (max-width: 850px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
