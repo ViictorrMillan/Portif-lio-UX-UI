@@ -72,6 +72,16 @@
   font-size: 0.875rem;
 }
 
+.experiencia_menu {
+  display: flex;
+  gap: 37px;
+  margin-bottom: 40px;
+}
+
+.experiencia_menu svg {
+  width: 40px;
+}
+
 @media (max-width: 1100px) {
   .experiencia .subtitulo {
     gap: 20px;
@@ -97,6 +107,7 @@
     order: 1;
     width: initial;
     color: #000;
+    border: 1;
   }
 
   .empresa-ano::before {
@@ -104,23 +115,24 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .empresa {
     grid-template-columns: 1fr;
+    max-width: 450px;
   }
+
+  .experiencia_menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .experiencia_menu svg {
+    width: 30px;
+  }
+  
 }
 
 
 
 
-
-/*! Experiência Menu  */
-.experiencia_menu svg {
-  width: 40px;
-}
-
-.experiencia_menu {
-  display: flex;
-  gap: 37px;
-  margin-bottom: 40px;
-}
