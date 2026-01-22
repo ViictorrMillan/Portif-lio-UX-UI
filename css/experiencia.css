@@ -17,7 +17,7 @@
 .empresa {
   max-width: 570px;
   display: grid;
-  gap: 10px 20px;
+  gap: 15px 20px;
   padding: 20px;
   background: #f5f5f5;
   margin-bottom: 20px;
@@ -27,14 +27,14 @@
 
 .empresa-titulos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 35ch 1fr;
   gap: 40px;
-
 }
 .empresa-conteudos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 35ch 1fr;
   gap: 40px;
+  align-self: center;
 }
 
 .empresa::before {
@@ -61,10 +61,9 @@
 
 .empresa-habilidades {
   display: flex;
-  align-content: start;
   gap: 10px;
   flex-wrap: wrap;
-  margin-top: 10px;
+  align-items: start;
 }
 
 .empresa-habilidades li {
@@ -75,13 +74,27 @@
   padding: 5px 10px;
 }
 
-.empresa-ano {
+.empresa-detalhes {
+  order: 1;
+}
+
+.empresa-detalhes .empresa-ano {
   position: absolute;
   top: 22px;
   left: -50px;
   color: #525252;
   font-size: 0.875rem;
 }
+
+
+.empresa-link {
+  font-size: 0.875rem;
+  color: #525252;
+  padding: 5px 5px;
+  border: 1px solid #525252;
+  border-radius: 5px;
+}
+
 
 .experiencia_menu {
   display: flex;
@@ -99,6 +112,15 @@
 }
 }
 
+@media (max-width: 1050px) {
+  .empresa-titulos,
+  .empresa-conteudos {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+
 @media (max-width: 850px) {
   .experiencia {
     grid-template-columns: 1fr;
@@ -113,14 +135,16 @@
     font-size: 1.25rem;
   }
 
-  .empresa-ano {
+  .empresa-detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ .empresa-detalhes .empresa-ano {
     position: initial;
-    order: 1;
     width: initial;
-    color: #000;
-    border: 1;
-    width: 100%;
-    text-align:right;
+    order: 1;
   }
 
   .empresa-ano::before {
@@ -130,16 +154,14 @@
 
 @media (max-width: 500px) {
   .empresa {
-    gap: 10px;
+    gap: 15px;
     max-width: 400px;
   }
 
   .empresa-conteudos {
     grid-template-columns: 1fr;  
-    gap: 10px;
+    gap: 15px;
   }
-
-  
 
   .empresa-titulos span {
     text-align: right;
