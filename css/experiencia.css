@@ -116,7 +116,6 @@
   .empresa-titulos,
   .empresa-conteudos {
     grid-template-columns: 1fr 1fr;
-
   }
 }
 
@@ -155,7 +154,7 @@
 @media (max-width: 500px) {
   .empresa {
     gap: 15px;
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .empresa-conteudos {
@@ -168,7 +167,7 @@
   }
 
    .experiencia-texto {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .experiencia_menu {
     gap: 25px;
@@ -187,6 +186,7 @@
    .empresa-titulos span {
     font-size: 1rem;
   }
+
 }
 
 
