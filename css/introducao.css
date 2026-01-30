@@ -22,6 +22,7 @@
 }
 
 
+
 .social-menu svg {
   width: 40px;
   height: 100%;
@@ -36,6 +37,21 @@
   transition: fill 0.25s ease, stroke 0.25s ease;
 }
 
+.curriculo {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 1px solid #292929;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.curriculo:hover {
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+}
 
 /* ====== 1100px ====== */
 @media (max-width: 1100px) {
