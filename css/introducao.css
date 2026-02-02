@@ -127,6 +127,15 @@
   }
 }
 
+@media (max-width: 350px) {
+  .social-menu svg {
+    width: 25px;
+    padding: 5px 5px;
+  }
+  .social-menu {
+    gap: 0px;
+  }
+}
 
 
 
