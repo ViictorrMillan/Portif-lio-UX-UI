@@ -1,4 +1,3 @@
-// easing suave e equilibrado (responde rápido ao clique e desacelera bonito)
 function easeSmooth(t) {
   return t * t * (3 - 2 * t);
 }
@@ -29,7 +28,6 @@ function scrollSuave(target, duration = 2200) {
   requestAnimationFrame(animationScroll);
 }
 
-// aplica scroll suave em todos os links com #
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const target = link.getAttribute('href');
@@ -38,6 +36,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     if (target.length === 1) return;
 
     e.preventDefault();
-    scrollSuave(target, 2200); velocidade aqui
+    scrollSuave(target, 2200); 
   });
 });
